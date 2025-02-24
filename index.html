@@ -2,288 +2,646 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sahil Sheikh | Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <!-- Add EmailJS CDN -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <title>Books4GHR</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+<link rel="manifest" href="favicon_io/site.webmanifest">
 </head>
 <body>
-    <div class="loader">
-        <div class="loading-text">Loading...</div>
+    
+<!-- header section starts  -->
+
+<header class="header">
+
+    <div class="header-1">
+
+        <a href="#" class="logo"> <i class="fas fa-book"></i> Books4GHR </a>
+
+        <form action="" class="search-form">
+            <input type="search" name="" placeholder="search here..." id="search-box">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+
+        <div class="icons">
+            <div id="search-btn" class="fas fa-search"></div>
+            <a href="./cart.html" class="fas fa-shopping-cart"></a>
+            <div id="login-btn" class="fas fa-user"></div>
+        </div>
+
     </div>
 
-    <div class="background">
-        <div class="cloud cloud1"></div>
-        <div class="cloud cloud2"></div>
-        <div class="cloud cloud3"></div>
-        <div class="cloud cloud4"></div>
-    </div>
-
-    <header>
-        <nav>
-            <div class="logo">
-                <div class="logo-text">
-                    <span>Tech</span>
-                    <span>Sahil</span>
-                </div>
-            </div>
-            <div class="nav-links">
-                <a href="#home" class="active">Home</a>
-                <a href="#about">About</a>
-                <a href="#experience">Experience</a>
-                <a href="#skills">Skills</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
-            </div>
-            <div class="mode-toggle">
-                <i class='bx bx-moon'></i>
-            </div>
+    <div class="header-2">
+        <nav class="navbar">
+            <a href="./index.html">home</a>
+            <a href="#featured">featured</a>
+            <a href="#">category</a>
+            <a href="#reviews">reviews</a>
+            <a href="./feedback.html">feedback</a>
         </nav>
-    </header>
+    </div>
 
-    <main>
-        <section id="home">
-            <div class="hero">
-                <div class="hero-text">
-                    <h1>Hi, I'm <span class="highlight">Sahil Sheikh</span></h1>
-                    <div class="animated-text">
-                        <span class="profession"></span>
-                    </div>
-                    <p>Crafting digital solutions with Java excellence</p>
-                    <div class="cta-buttons">
-                        <button onclick="location.href='#contact'" class="cta-btn primary-btn">Get in Touch</button>
-                        <button onclick="location.href='#projects'" class="cta-btn primary-btn">View Work</button>
-                    </div>
-                </div>
-                <div class="hero-image">
-                    <div class="blob"></div>
-                    <img src="sahil_dp.png" alt="Sahil Sheikh">
-                </div>
-            </div>
-        </section>
+</header>
 
-        <!-- About Section -->
-        <section id="about">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>As a passionate Java Developer, I thrive on transforming complex problems into elegant solutions. With a keen eye for detail and a commitment to clean code, I specialize in building robust backend systems and scalable applications. My journey in software development is driven by an insatiable curiosity and a desire to create technology that makes a meaningful impact.</p>
-                </div>
-            </div>
-        </section>
+<!-- header section ends -->
 
-        <!-- Education section -->
-        <section id="education">
-            <h2 class="section-title">Education</h2>
-        <div class="education-timeline">
-            <h3>Education</h3>
-            <div class="timeline-item">
-                <div class="date">2023-2025</div>
-                <h4>Master's in Computer Applications</h4>
-                <p>G H Rasioni College of Engineering and Management, Nagpur - 9.81 CGPA</p>
-            </div>
-            <div class="timeline-item">
-                <div class="date">2020-2023</div>
-                <h4>Bachelor of Science in Computer Science</h4>
-                <p>Dhote Bandhu Science College, Gondia - 8.15 CGPA</p>
-            </div>
-            <div class="timeline-item">
-                <div class="date">2019-2020</div>
-                <h4>HSC Science</h4>
-                <p>Maharashtra State Board - 84.92%</p>
-            </div>
-            <!-- <div class="timeline-item"></div>
-                <div class="date">2017-2018</div>
-                <h4>SSC </h4>
-                <p>Maharashtra State Board - 83.60%</p>
-            </div> -->
+<!-- bottom navbar  -->
+
+<nav class="bottom-navbar">
+    <a href="#home" class="fas fa-home"></a>
+    <a href="#featured" class="fas fa-list"></a>
+    <a href="#arrivals" class="fas fa-tags"></a>
+    <a href="#reviews" class="fas fa-comments"></a>
+    <a href="#feedback" class="fas fa-feedback"></a>
+</nav>
+
+<!-- login form  -->
+
+<div class="login-form-container">
+
+    <div id="close-login-btn" class="fas fa-times"></div>
+
+    <form action="">
+        <h3>sign in</h3>
+        <span>username</span>
+        <input type="email" name="" class="box" placeholder="enter your email" id="">
+        <span>password</span>
+        <input type="password" name="" class="box" placeholder="enter your password" id="">
+        <div class="checkbox">
+            <input type="checkbox" name="" id="remember-me">
+            <label for="remember-me"> remember me</label>
         </div>
-        </section>
+        <input type="submit" value="sign in" class="btn">
+        <p>forget password ? <a href="#">click here</a></p>
+        <p>don't have an account ? <a href="#">create one</a></p>
+    </form>
 
-        <!-- Experience Section -->
-        <section id="experience">
-            <h2 class="section-title">Experience</h2>
-            <div class="experience-card">
-                <div class="exp-header">
-                    <h3>RTSoft Solutions</h3>
-                    <span class="experience-duration">Dec 2024 - Present</span>
-                </div>
-                <h4>Java Developer Internship</h4>
-                <p>- Developing and maintaining Java-based applications using Spring</p>
-                <p>- Desig the user interface(UI) and user experience(UX) for websites and web application</p>
-                <p>- Collaborating with senior developers on large-scale projects</p>
-                <p>- Writing clean, maintainable, and efficient code</p>
+</div>
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="row">
+
+        <div class="content">
+            <h3>upto 75% off</h3>
+            <p>If you’re an Engineering student and need a books, Books4MU has great deals on a wide range of books. Shop for these books from top authors and avail hugely discounted prices</p>
+            <a href="#" class="btn">shop now</a>
+        </div>
+
+        <div class="swiper books-slider">
+            <div class="swiper-wrapper">
+                <a href="#" class="swiper-slide"><img src="image/book-1.png" alt=""></a>
+                <a href="#" class="swiper-slide"><img src="image/book-2.png" alt=""></a>
+                <a href="#" class="swiper-slide"><img src="image/book-3.png" alt=""></a>
+                <a href="#" class="swiper-slide"><img src="image/book-4.png" alt=""></a>
+                <a href="#" class="swiper-slide"><img src="image/book-5.png" alt=""></a>
+                <a href="#" class="swiper-slide"><img src="image/book-6.png" alt=""></a>
             </div>
-        </section>
+            <img src="image/stand.png" class="stand" alt="">
+        </div>
 
-        <section id="skills">
-            <h2 class="section-title">Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <i class='bx bxl-java'></i>
-                    <h3>Java</h3>
-                    <div class="progress-bar">
-                        <div class="progress" style="width: 90%"></div>
-                    </div>
-                </div>
-                <div class="skill-card">
-                    <i class='bx bx-data'></i>
-                    <h3>MySQL</h3>
-                    <div class="progress-bar">
-                        <div class="progress" style="width: 85%"></div>
-                    </div>
-                </div>
-                <div class="skill-card">
-                    <i class='bx bxl-python'></i>
-                    <h3>Python</h3>
-                    <div class="progress-bar">
-                        <div class="progress" style="width: 80%"></div>
-                    </div>
-                </div>
-                <div class="skill-card">
-                    <i class='bx bxl-c-plus-plus'></i>
-                    <h3>C++</h3>
-                    <div class="progress-bar">
-                        <div class="progress" style="width: 75%"></div>
-                    </div>
-                </div>
-                <div class="skill-card">
-                    <i class='bx bx-code-alt'></i>
-                    <h3>DSA in Java</h3>
-                    <div class="progress-bar">
-                        <div class="progress" style="width: 75%"></div>
-                    </div>
-                </div>
-                <div class="skill-card">
-                    <i class='bx bxl-html5'></i>
-                    <h3>HTML</h3>
-                    <div class="progress-bar">
-                        <div class="progress" style="width: 85%"></div>
-                    </div>
-                </div>
-                <div class="skill-card">
-                    <i class='bx bxl-css3'></i>
-                    <h3>CSS</h3>
-                    <div class="progress-bar">
-                        <div class="progress" style="width: 80%"></div>
-                    </div>
-                </div>
-                <div class="skill-card">
-                    <i class='bx bxl-javascript'></i>
-                    <h3>JavaScript</h3>
-                    <div class="progress-bar">
-                        <div class="progress" style="width: 75%"></div>
-                    </div>
-                </div>
-            </div>
-        </section>
+    </div>
 
-        <section id="projects">
-            <h2 class="section-title">Projects</h2>
-            <div class="projects-container">
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="enote.png" alt="Project 1">
-                    </div>
-                    <div class="project-info">
-                        <h3>E-Note Application</h3>
-                        <p>Digital note management system built with Java & MySQL</p>
-                        <div class="project-links">
-                            <a href="https://github.com/Tech-SahilSh/JAVA-Project/tree/main/Enotes2" class="github-link"><i class='bx bxl-github'></i></a>
-                            <!-- <a href="https://github.com/Tech-SahilSh/JAVA-Project/tree/main/Enotes2" class="live-link"><i class='bx bx-link-external'></i></a> -->
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="amazon.png" alt="Project 1">
-                    </div>
-                    <div class="project-info">
-                        <h3>Amazon Clone</h3>
-                        <p>Amazon Clone design with HTML & CSS</p>
-                        <div class="project-links">
-                            <a href="https://github.com/Tech-SahilSh/CSS3" class="github-link"><i class='bx bxl-github'></i></a>
-                            <!-- <a href="https://github.com/Tech-SahilSh/CSS3" class="live-link"><i class='bx bx-link-external'></i></a> -->
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="Book4GHR.png" alt="Project 3">
-                    </div>
-                    <div class="project-info">
-                        <h3>Book4GHR</h3>
-                        <p>Book Selling Website design with HTML,CSS & JS</p>
-                        <div class="project-links">
-                            <a href="https://tech-sahilsh.github.io/Booksr4GHR" class="github-link"><i class='bx bxl-github'></i></a>
-                            <!-- <a href="https://github.com/Tech-SahilSh/CSS3" class="live-link"><i class='bx bx-link-external'></i></a> -->
-                        </div>
-                    </div>
-                </div>
-        
-                <!-- Add more project cards as needed -->
-            </div>
-        </section>
+</section>
 
-        <section id="contact">
-            <h2 class="section-title">Get in Touch</h2>
-            <div class="contact-container">
-                <div class="contact-info">
-                    <h3>Let's Connect!</h3>
-                    <p>Feel free to reach out for collaborations or just a friendly hello</p>
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <i class='bx bx-envelope'></i>
-                            <span>sahil.sheikh1978@gmail.com</span>
-                        </div>
-                        <div class="contact-item">
-                            <i class='bx bx-phone'></i>
-                            <span>+91 9359299818</span>
-                        </div>
-                    </div>
-                </div>
-                <form class="contact-form" id="contactForm">
-                    <input type="text" name="name" placeholder="Your Name" required>
-                    <input type="email" name="email" placeholder="Your Email" required>
-                    <textarea name="message" placeholder="Your Message" required></textarea>
-                    <button type="submit" class="submit-btn">Send Message</button>
-                </form>
-            </div>
-        </section>
-    </main>
+<!-- home section ense  -->
 
-    <div class="social-links-container">
-        <div class="social-links">
-            <a href="https://linkedin.com//in/sahil-sheikh30" target="_blank" class="social-btn">
-                <i class='bx bxl-linkedin'></i>
-                LinkedIn
-            </a>
-            <a href="https://github.com/Tech-SahilSh" target="_blank" class="social-btn">
-                <i class='bx bxl-github'></i>
-                GitHub
-            </a>
-            <a href="mailto:sahil.sheikh1978@gmail.com?subject=Portfolio Contact" class="social-btn">
-                <i class='bx bx-envelope'></i>
-                Email
-            </a>
-            <a href="tel:+919359299818" class="social-btn">
-                <i class='bx bx-phone'></i>
-                Call
-            </a>
-            <a href="SahilResume.pdf" download class="social-btn download-btn">
-                <i class='bx bx-download'></i>
-                Resume
-            </a>
+<!-- icons section starts  -->
+
+<section class="icons-container">
+
+    <div class="icons">
+        <i class="fas fa-shipping-fast"></i>
+        <div class="content">
+            <h3>free shipping</h3>
+            <p>order over $100</p>
         </div>
     </div>
 
-    <!-- <footer>
-        <p>&copy; 2024 Sahil Sheikh. All rights reserved.</p>
-    </footer> -->
+    <div class="icons">
+        <i class="fas fa-lock"></i>
+        <div class="content">
+            <h3>secure payment</h3>
+            <p>100 secure payment</p>
+        </div>
+    </div>
 
-    <script src="script.js"></script>
+    <div class="icons">
+        <i class="fas fa-redo-alt"></i>
+        <div class="content">
+            <h3>easy returns</h3>
+            <p>10 days returns</p>
+        </div>
+    </div>
+
+    <div class="icons">
+        <i class="fas fa-headset"></i>
+        <div class="content">
+            <h3>24/7 support</h3>
+            <p>call us anytime</p>
+        </div>
+    </div>
+
+</section>
+
+<!-- icons section ends -->
+
+<!-- featured section starts  -->
+
+<section class="featured" id="featured">
+
+    <h1 class="heading"> <span>featured books</span> </h1>
+
+    <div class="swiper featured-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                   <a href="./product.html"> <img src="image/book-1.png" alt=""> </a>
+                </div>
+                <div class="content">
+                    <h3>featured books</h3>
+                    <div class="price">$15.99 <span>$20.99</span></div>
+                    <a href="./cart.html" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <a href="./product.html"> <img src="image/book-2.png" alt=""> </a>
+                </div>
+                <div class="content">
+                    <h3>featured books</h3>
+                    <div class="price">$15.99 <span>$20.99</span></div>
+                    <a href="./cart.html" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <a href="product.html"><img src="image/book-3.png" alt=""> </a>
+                </div>
+                <div class="content">
+                    <h3>featured books</h3>
+                    <div class="price">$15.99 <span>$20.99</span></div>
+                    <a href="./cart.html" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="image/book-4.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>featured books</h3>
+                    <div class="price">$15.99 <span>$20.99</span></div>
+                    <a href="./cart.html" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="image/book-5.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>featured books</h3>
+                    <div class="price">$15.99 <span>$20.99</span></div>
+                    <a href="./cart.html" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="image/book-6.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>featured books</h3>
+                    <div class="price">$15.99 <span>$20.99</span></div>
+                    <a href="./cart.html" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="image/book-7.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>featured books</h3>
+                    <div class="price">$15.99 <span>$20.99</span></div>
+                    <a href="./cart.html" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="image/book-8.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>featured books</h3>
+                    <div class="price">$15.99 <span>$20.99</span></div>
+                    <a href="./cart.html" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="image/book-9.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>featured books</h3>
+                    <div class="price">$15.99 <span>$20.99</span></div>
+                    <a href="./cart.html" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="image/book-10.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>featured books</h3>
+                    <div class="price">$15.99 <span>$20.99</span></div>
+                    <a href="./cart.html" class="btn">add to cart</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+    </div>
+
+</section>
+
+<!-- featured section ends -->
+
+<!-- newsletter section starts -->
+
+<section class="newsletter">
+
+    <form action="">
+        <h3>subscribe for latest updates</h3>
+        <input type="email" name="" placeholder="enter your email" id="" class="box">
+        <input type="submit" value="subscribe" class="btn">
+    </form>
+
+</section>
+
+<!-- newsletter section ends -->
+
+<!-- category section starts  -->
+
+<section class="arrivals" id="arrivals">
+
+    <h1 class="heading"> <span>Category</span> </h1>
+
+    <div class="swiper arrivals-slider">
+
+        <div class="swiper-wrapper">
+
+            <a href="#" class="swiper-slide box">
+                <div class="image">
+                    <img src="image/book-1.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Semester 1</h3>
+                </div>
+            </a>
+
+            <a href="#" class="swiper-slide box">
+                <div class="image">
+                    <img src="image/book-4.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Semester 2</h3> 
+                </div>
+            </a>
+
+            <a href="#" class="swiper-slide box">
+                <div class="image">
+                    <img src="image/book-6.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Semester 3</h3>
+                </div>
+            </a>
+
+            <a href="#" class="swiper-slide box">
+                <div class="image">
+                    <img src="image/book-7.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Semester 4</h3>
+                </div>
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="swiper arrivals-slider">
+
+        <div class="swiper-wrapper">
+
+            <a href="#" class="swiper-slide box">
+                <div class="image">
+                    <img src="image/book-8.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Semester 5</h3>  
+                </div>
+            </a>
+
+            <a href="#" class="swiper-slide box">
+                <div class="image">
+                    <img src="image/book-9.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Semester 6</h3> 
+                </div>
+            </a>
+
+            <a href="#" class="swiper-slide box">
+                <div class="image">
+                    <img src="image/book-10.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Semester 7</h3> 
+                </div>
+            </a>
+
+            <a href="#" class="swiper-slide box">
+                <div class="image">
+                    <img src="image/book3.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Semester 8</h3>
+                </div>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- category section ends -->
+
+<!-- deal section starts  -->
+
+<section class="deal">
+
+    <div class="content">
+        <h3>deal of the day</h3>
+        <h1>upto 50% off</h1>
+        <p>Checkout before this deal expires at midnight.</p>
+        <a href="#" class="btn">shop now</a>
+    </div>
+
+    <div class="image">
+        <img src="image/deal-img.jpg" alt="">
+    </div>
+
+</section>
+
+<!-- deal section ends -->
+
+<!-- reviews section starts  -->
+
+<section class="reviews" id="reviews">
+
+    <h1 class="heading"> <span>client's reviews</span> </h1>
+
+    <div class="swiper reviews-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <img src="image/pic-1.png" alt="">
+                <h3>ujjwal </h3>
+                <p>First of all it customer service is excellent. We get all author book for Mumbai University. People should try here affordable and best price.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/pic-2.png" alt="">
+                <h3>marry </h3>
+                <p>Best book store almost all books are available for prepartion of exam related or other books are available on reaonable price also.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/pic-3.png" alt="">
+                <h3>Raghu </h3>
+                <p>Customer Service is good. Greetings to customer and making the required Books available to Customers is very good.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+            <div class="swiper-slide box">
+                <img src="image/pic-4.png" alt="">
+                <h3>Pooja </h3>
+                <p>This book centre have large amount of a books. The engineering study material all semester books are available.then the peacefull and nice book centre.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/pic-5.png" alt="">
+                <h3>Abhinav </h3>
+                <p>I migrated to the online platform on Just books because I was finding it difficult to go to their libraries before closing time.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/pic-6.png" alt="">
+                <h3>Sidddhi </h3>
+                <p>I love the product because it is very easy to find. The book are in really organized manner you can easily find the book you want.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+</section>
+
+<!-- reviews section ends -->
+
+<!-- feedback section starts  -->
+
+<section class="blogs" id="blogs">
+
+    <h1 class="heading"> <span>feedback</span> </h1>
+
+    <section class="newsletter">
+
+        <form action="">
+            <h3>give your feedback here...</h3>
+            <a href="./feedback.html" class="btn">Feedback</a>
+            <!-- <a href="./feedback.html"><input type="submit" value="feedback"> -->
+            </a>
+        </form>
+    
+    </section>
+</section>
+
+<!-- feedback section ends -->
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>our locations</h3>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> india </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> USA </a>
+        </div>
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="./index.html"> <i class="fas fa-arrow-right"></i> home </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> featured </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> Category </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> reviews </a>
+            <a href="./feedback.html"> <i class="fas fa-arrow-right"></i> feedback </a>
+        </div>
+
+        <div class="box">
+            <h3>extra links</h3>
+            <a href="#"> <i class="fas fa-arrow-right"></i> account info </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> ordered items </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> privacy policy </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> payment method </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> our serivces </a>
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <a href="#"> <i class="fas fa-phone"></i> 91672 85469 </a>
+            <a href="#"> <i class="fas fa-phone"></i> 77388 89523 </a>
+            <a href="#"> <i class="fas fa-envelope"></i> bhendarkardipesh461@gmail.com </a>
+            <a href="#"> <i class="fas fa-envelope"></i> mayurshahu2106@gmail.com </a>
+            <img src="image/worldmap.png" class="map" alt="">
+        </div>
+        
+    </div>
+
+    <div class="share">
+        <a href="#" class="fab fa-facebook-f"></a>
+        <a href="https://twitter.com/priyankakorde" class="fab fa-twitter"></a>
+        <a href="X" class="fab fa-instagram"></a>
+        <a href="https://www.linkedin.com/in/priyanka-korde-2029521a1/" class="fab fa-linkedin"></a>
+        <a href="https://www.linkedin.com/in/rohit-m-3494521a2/" class="fab fa-linkedin"></a>
+    </div>
+
+    <div class="credit"> created by <span>Dipesh Bhendarkar & Mayur Shahu </span>copyright &copy;2024 all rights reserved! </div>
+
+</section>
+
+<!-- footer section ends -->
+
+<!-- loader  -->
+
+<div class="loader-container">
+    <img src="image/loader-img.gif" alt="">
+</div>
+
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
 </body>
-</html> 
+</html>
